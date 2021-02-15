@@ -1,0 +1,51 @@
+.bg1 { background-color:#2d2b2f; transition: all 0s}
+.bg2 { opacity: 0.0; transition: all 1s}
+td{
+  width : 20px;
+  height : 20px;
+  padding : 0;
+  font-weight: bolder;
+  font-size: small;
+}
+.underline {
+  box-shadow:  0px 5px 5px 5px hsla(0, 0%, 0%, 0.2);
+}
+table{
+  border-collapse: collapse;
+}
+
+/* Parent Container */
+.content_img{
+ position: relative;
+ width: 98px;
+ height: 98px;
+ float: left;
+ margin-right: 0px;
+}
+
+/* Child Text Container */
+.content_img div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: black;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear;
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+ cursor: pointer;
+}
+
+.content_img:hover div{
+ width: 30px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7;
+}
